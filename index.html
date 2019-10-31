@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <form>
+    <p>1+1</p>
+    <input type="radio" name="question-1" id="1">2
+        <input type="radio" name="question-1" id="2">Фильм
+         <input type="radio" name="question-1"id="3">3
+         <input type="radio" name="question-1"id="4">4
+        <p>Самое маленькое государство в мире</p>
+                <input type="radio" name="question-2" id="5">Россия
+         <input type="radio" name="question-2" id="6">Китай
+        <input type="radio"  name="question-2" id="7">Ватикан
+        <input type="radio"  name="question-2" id="8">ОАЭ
+        <p>Самая богатая компания в мире</p>
+         <input type="radio" name="question-3" id="9">Apple
+         <input type="radio" name="question-3" id="10">Microsoft
+         <input type="radio" name="question-3" id="11">Amazon
+         <input type="radio" name="question-3" id="12">Google
+        <p>Самый мощный компьютер в мире <p>
+        <input type="radio" name="question-4"  id="13">RasorX
+         <input type="radio" name="question-4" id="14">Asus
+         <input type="radio" name="question-4" id="15">IMac
+         <input type="radio" name="question-4" id="16">Мозг
+        <button onclick="check()">Проверить</button>
+         <p id="correct">correct</p>
+                 <p id="incorrect">incorrect</p>
+
+        </form>
+        <script>
+            function check() {
+                correct=0
+                incorrect=4
+
+                if(document.getElementById("2").checked){
+                    correct++
+                    incorrect--
+                }
+                if (document.getElementById("7").checked){
+                     correct++
+                    incorrect--
+
+                }
+                if (document.getElementById("11").checked) {
+                     correct++
+                    incorrect--
+                }
+                if (document.getElementById("16").checked) {
+                     correct++
+                    incorrect--
+                }
+                document.getElementById("correct").innerHTML="correct: "+correct
+                document.getElementById("incorrect").innerHTML="incorrect: "+incorrect
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+</body>
+</html>
